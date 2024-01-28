@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Food App. is the best app to know more about your food and match favourite meal with your country and needs"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link your font -->
+    <link href="./images/logo.png" rel="icon" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>Yummy</title>
+  </head>
+  <body class="my-overflow">
+    <!-- Loading Layer -->
+    <div
+      class="loading my-flex bg-black align-items-center justify-content-center position-absolute end-0 z-3 bottom-0 my-none"
+    >
+      <i class="fas fa-spinner fa-5x text-white fa-spin"></i>
+    </div>
+    <div
+      class="loading-first my-flex bg-black align-items-center justify-content-center position-absolute end-0 z-3 bottom-0 top-0 start-0 end-0"
+    >
+      <i class="fas fa-spinner fa-5x text-white fa-spin"></i>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="position-fixed d-flex min-vh-100 top-0">
+      <!-- left Side -->
+      <div
+        class="d-flex flex-column gap-5 left-side p-4 justify-content-between flex-column"
+      >
+        <div>
+          <ul class="my-links">
+            <li class="py-2 position-relative">
+              <a href="#search" class="nav-link-me my-non-load-link">Search</a>
+            </li>
+            <li class="py-2 position-relative">
+              <a href="#categories" class="nav-link-me my-load-link"
+                >Categories</a
+              >
+            </li>
+            <li class="py-2 position-relative">
+              <a href="#area" class="nav-link-me my-load-link">Area</a>
+            </li>
+            <li class="py-2 position-relative">
+              <a href="#ingredients" class="nav-link-me my-load-link"
+                >Ingredients</a
+              >
+            </li>
+            <li class="py-2 position-relative">
+              <a href="#contact" class="nav-link-me my-non-load-link"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <!-- Right Side -->
+      <div
+        class="d-flex flex-column gap-5 justify-content-between py-4 text-center px-2 bg-white text-black right-side"
+      >
+        <img src="./images/logo.png" alt="" class="logo" />
+        <i class="fa-solid open-close-icon fa-2x fa-x my-none"></i>
+        <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- Home Section -->
+    <section
+      class="home-section my-main-section position-relative my-load-section"
+    >
+      <div
+        class="loading align-items-center justify-content-center position-absolute end-0 z-3 bottom-0 my-none"
+      >
+        <i class="fas fa-spinner fa-5x text-white fa-spin"></i>
+      </div>
+      <div class="container">
+        <div class="row py-5 g-4"></div>
+      </div>
+    </section>
+
+    <!-- Specified Reciepe Details Section -->
+    <section class="reciepe-detail my-none"></section>
+    <!-- Search Section -->
+    <section
+      id="search"
+      class="my-main-section p-5 my-none my-non-load-section"
+    >
+      <div class="container px-4">
+        <div class="row">
+          <div class="col-md-6 pb-2">
+            <input
+              class="form-control bg-transparent text-white"
+              type="text"
+              placeholder="Search By Name"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              class="form-control bg-transparent text-white"
+              type="text"
+              placeholder="Search By First Letter"
+              maxlength="1"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container pt-5 section-search position-relative">
+        <div
+          class="loading align-items-center justify-content-center position-absolute end-0 z-3 my-none start-0 .my-top"
+        >
+          <i class="fas fa-spinner fa-5x text-white fa-spin"></i>
+        </div>
+        <div class="row g-4"></div>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+    <section
+      id="categories"
+      class="my-none my-main-section my-load-section p-5 position-relative"
+    >
+      <div class="container">
+        <div class="row"></div>
+      </div>
+      <div
+        class="popUp-Layer position-absolute my-flex col-lg justify-content-center align-items-center my-none"
+      >
+        <div
+          class="bg-white childPopUp d-flex justify-content-center position-relative align-items-center w-75 flex-column gap-3 p-5 rounded-3"
+        >
+          <i class="fa-solid fa- fa-x m position-absolute my-ex text-black"></i>
+          <h3>sdddddddddd</h3>
+          <img src="./images/logo.png" alt="Category Image" class="w-50" />
+          <p>ssssssssssssssssssssssss</p>
+        </div>
+      </div>
+    </section>
+    <section class="category-branch my-none px-5">
+      <div class="container">
+        <div class="row py-5 g-4"></div>
+      </div>
+    </section>
+
+    <!-- Area Section -->
+    <section
+      id="area"
+      class="my-none my-main-section my-load-section p-5 position-relative"
+    >
+      <div class="container">
+        <div class="row pt-5 g-4"></div>
+      </div>
+    </section>
+    <section class="area-branch px-5 my-none">
+      <div class="container">
+        <div class="row pt-5 g-4"></div>
+      </div>
+    </section>
+    <!-- Ingredient Section -->
+    <section
+      id="ingredients"
+      class="my-none my-main-section my-load-section p-5"
+    >
+      <div class="container">
+        <div class="row pt-5 g-4"></div>
+      </div>
+      <div
+        class="popUp-Layer position-absolute my-flex justify-content-center align-items-center my-none"
+      >
+        <div
+          class="bg-white childPopUp d-flex justify-content-center position-relative align-items-center w-75 h-75 flex-column gap-3 p-5"
+        >
+          <i class="fa-solid fa- fa-x m position-absolute my-ex text-black"></i>
+          <h3 class="text-black">sdddddddddd</h3>
+          <p class="text-black">ssssssssssssssssssssssss</p>
+        </div>
+      </div>
+    </section>
+    <section class="ingredients-branch px-5 my-none">
+      <div class="container">
+        <div class="row pt-5 g-4 p-3"></div>
+      </div>
+    </section>
+    <!-- Contact US Section -->
+    <section
+      id="contact"
+      class="my-main-section my-non-load-section my-none min-vh-100 my-flex justify-content-center align-items-center"
+    >
+      <div class="container pt-5">
+        <div class="row my-row">
+          <div class="col-md-6 pb-4">
+            <input
+              class="form-control bg-white text-whit"
+              id="name-input"
+              type="text"
+              placeholder="Enter Your Name"
+            />
+            <div id="name-alert" class="alert alert-danger w-100 mt-2 my-none">
+              Special characters and numbers not allowed
+            </div>
+          </div>
+          <div class="col-md-6 pb-4">
+            <input
+              class="form-control bg-white text-white"
+              id="email-input"
+              type="email"
+              placeholder="Enter Your Email"
+            />
+            <div id="email-alert" class="alert alert-danger w-100 mt-2 my-none">
+              Email not valid *exemple@yyy.zzz
+            </div>
+          </div>
+          <div class="col-md-6 pb-4">
+            <input
+              class="form-control bg-white text-white"
+              id="phone-input"
+              type="tel"
+              placeholder="Enter Your phone"
+            />
+            <div id="phone-alert" class="alert alert-danger w-100 mt-2 my-none">
+              Enter valid Phone Number
+            </div>
+          </div>
+
+          <div class="col-md-6 pb-4">
+            <input
+              class="form-control bg-white text-white"
+              id="age-input"
+              type="number"
+              placeholder="Enter Your Age"
+            />
+
+            <div id="age-alert" class="alert alert-danger w-100 mt-2 my-none">
+              Enter valid Phone Number
+            </div>
+          </div>
+          <div class="col-md-6 pb-4">
+            <input
+              class="form-control bg-white text-white"
+              id="password-input"
+              type="password"
+              placeholder="Enter Your Password"
+            />
+            <div
+              id="password-alert"
+              class="alert alert-danger w-100 mt-2 my-none"
+            >
+              Enter valid password *Minimum eight characters, at least one
+              letter and one number:*
+            </div>
+          </div>
+          <div class="col-md-6 pb-4">
+            <input
+              class="form-control bg-white text-white"
+              id="repassword-input"
+              type="password"
+              placeholder="Repassword"
+            />
+            <div
+              id="repassword-alert"
+              class="alert alert-danger w-100 mt-2 my-none"
+            >
+              Enter valid repassword
+            </div>
+          </div>
+
+          <div class="col-md-12 d-flex justify-content-center">
+            <button
+              id="submitBtn"
+              disabled=""
+              class="btn btn-outline-danger px-2 mt-3"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

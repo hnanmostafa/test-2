@@ -1,0 +1,97 @@
+nav {
+  width: 350px;
+  z-index: 99999 !important;
+  /* left: -300px; */
+}
+.my-overflow {
+  overflow: hidden;
+}
+.my-flex {
+  display: flex;
+}
+.logo {
+  width: 50px;
+}
+.left-side {
+  background-color: var(--main-color);
+}
+.my-links li {
+  top: 300px;
+}
+.my-none {
+  display: none;
+}
+
+.layer {
+  background-color: #f9f6f6ca;
+  overflow: hidden;
+  top: 100%;
+  transition: 0.5s;
+}
+.card-container:hover .layer {
+  top: 0;
+}
+#search ::placeholder {
+  color: rgba(233, 237, 201, 0.5) !important;
+}
+
+.search-card {
+  color: var(--main-color);
+}
+
+#search .loading {
+  background-color: var(--main-color);
+  /* height: 100vh; */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.loading {
+  /* z-index: 1000 !important; */
+  height: 100vh;
+  left: 0;
+}
+
+.loading-first {
+  z-index: 99999999999999999 !important;
+}
+
+.my-row {
+  padding-inline: 4rem;
+}
+
+.popUp-Layer {
+  background-color: rgba(56, 58, 58, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.my-ex {
+  right: 10px;
+  top: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox
+input[type="number"] {
+  -moz-appearance: textfield;
+} */
+
+.my-block {
+  display: block;
+}
+#contact input {
+  color: black !important;
+}
+
+.my-top {
+  top: 0;
+}
